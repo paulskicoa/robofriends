@@ -1,0 +1,13 @@
+<!-- Hide scrollbars but still allow scrolling -->
+
+div {
+  -ms-overflow-style: none;  /* IE 10+ */
+  overflow: -moz-scrollbars-none; /* should hide scroll bar */
+}
+/* no scroll bar for Safari and Chrome */
+div::-webkit-scrollbar {
+  display: none; /*  might be enought */
+  background: transparent;
+  visibility: hidden;
+  width: 0px;
+}
